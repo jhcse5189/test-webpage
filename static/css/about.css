@@ -142,9 +142,10 @@ a {
     position: fixed;
     top: 0;
 
-    width: 370px;
-
+    width: 100%;
     height: 100%;
+
+    left: -100%;
 
     z-index: 10000;
 
@@ -202,7 +203,7 @@ a {
 }
 
 #menu.close {
-    left: -370px;
+    left: -100%;
 }
 
 #logo_menu {
@@ -384,40 +385,7 @@ hr {
 }
 
 
-/* media query test */
-@media screen and (max-width: 600px) {
-    /* mobile */
-    #social {
-        display: none;
-    }
-    #icon {
-        display: block;
-    }
-}
-
-@media screen and (max-width: 768px)  {
-    /* mobile */
-    #copyright {
-        visibility: hidden;
-    }
-
-    #copyright:after {
-        content: 'COPYRIGHT © ICEWALL. All rights reserved.';
-        visibility: visible;
-        
-        display: block;
-
-        position: relative;
-        top: -45px;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    #menu {
-        left: -370px;
-    }
-}
-
+/* media query */
 @media screen and (min-width: 960px) {
     #logo_menu {
         margin-left: 0;
@@ -446,15 +414,6 @@ hr {
     }
 }
 
-@media screen and (max-width: 900px) {
-    nav ul li, .navbar-toggler {
-        display: none;
-    }
-
-    #hamburger {
-        display: block;
-    }
-}
 
 @media screen and (max-width: 1180px) {
     #main {
@@ -472,4 +431,51 @@ hr {
         display: none;
     }
 }
+
+@media screen and (max-width: 900px) {
+    nav ul li, .navbar-toggler {
+        display: none;
+    }
+
+    #hamburger {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 800px)  {
+    /* mobile */
+    #copyright {
+        visibility: hidden;
+    }
+
+    #copyright:after {
+        content: 'COPYRIGHT © ICEWALL. All rights reserved.';
+        visibility: visible;
+        
+        display: block;
+
+        position: relative;
+        top: -45px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* mobile */
+    #social {
+        display: none;
+    }
+    #icon {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #menu {
+        display: none;
+    }
+    #hamburger {
+        display: none;
+    }
+}
+
 

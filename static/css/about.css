@@ -210,8 +210,6 @@ a {
     position: relative;
     top: 100px;
     left: 50%;
-
-    width: 150px;
 }
 
 #items {
@@ -299,7 +297,6 @@ a {
 }
 
 #logo_top {
-    width: 150px;
     position: relative;
     top: 0;
 
@@ -310,6 +307,9 @@ a {
 #logo_footer {
     display: block;
     margin: 45px auto;
+
+    width: 226.9px;
+    height: 48.63px;
 }
 
 #social, #icon {
